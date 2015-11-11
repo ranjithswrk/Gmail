@@ -21,7 +21,7 @@ public class NewTest {
 	  BasicConfigurator.configure();
 	  WebDriver driver; 
 	  driver = new ChromeDriver();
-	  String Exp_Res = "ssss";
+	  String Exp_Res = "Gmail";
 	  	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	  driver.get("https://gmail.com");
 	  driver.findElement(By.id("Email")).sendKeys("ranjithswrk");
