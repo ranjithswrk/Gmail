@@ -29,16 +29,18 @@ public class NewTest {
 	  driver.findElement(By.xpath(".//*[@id='Passwd']")).sendKeys("Ranjith@143");
 	  driver.findElement(By.xpath(".//*[@id='signIn']")).click();
 	  
-	  String actual = driver.getTitle();
-	  if (actual.equalsIgnoreCase(Exp_Res))
-		{
-			log.info("PASS");
-		}
-		else
-		{
-			log.error("FAIL");
-			
-		}
+  String actual = driver.getTitle();
+//	  if (actual.equalsIgnoreCase(Exp_Res))
+//		{
+//			log.info("PASS");
+//		}
+//		else
+//		{
+//			log.error("FAIL");
+//			
+//		}
+	  
+	  Assert.assertEquals(actual, Exp_Res);
 	  
   }
 }
