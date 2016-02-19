@@ -26,7 +26,7 @@ public class NewTest {
 	  driver.get("https://gmail.com");
 	  driver.findElement(By.id("Email")).sendKeys("ranjithswrk");
 	  driver.findElement(By.id("next")).click();
-	  driver.findElement(By.xpath(".//*[@id='Passwd']")).sendKeys("Ranjith@143");
+	  driver.findElement(By.xpath(".//*[@id='Passwd']")).sendKeys("LoL!Nice TRY!");
 	  driver.findElement(By.xpath(".//*[@id='signIn']")).click();
 	  
   String actual = driver.getTitle();
